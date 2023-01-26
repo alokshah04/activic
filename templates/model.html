@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        *,
+        *::after,
+        *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        font-size: 62,5%;
+        }
+
+        body {
+        background: #0f2027; /* fallback for old browsers */
+        color: #fff;
+        }
+
+        .form__label {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            display: block;
+            transition: all 0.3s;
+            transform: translateY(0rem);
+        }
+
+        .form__input {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            font-size: 1.0rem;
+                margin: 0 auto;
+            padding: 1.3rem 1.5rem;
+            border-radius: 0.2rem;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            width: 90%;
+            display: block;
+            border-bottom: 0.3rem solid transparent;
+            transition: all 0.3s;
+            }
+
+            .form__input:placeholder-shown + .form__label {
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
+        }
+
+        
+        body,h1 {font-family: "Raleway", sans-serif}
+        body {
+            
+            background-color: #11CDC5;
+        }
+        
+    </style>
+    <div class="w3-display-middle">
+        <center><div class="w3-jumbo w3-animate-top" style="
+            color: whitesmoke; 
+            clear: both;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;">Detecting Offensive</div></center>
+        <center><div class="w3-jumbo w3-animate-top" style="color:whitesmoke">Speech</div></center>
+        <hr class="w3-border-grey" style="padding-top:50px;margin:auto;width:40%">
+        <p class="w3-xlarge w3-center" style="padding-bottom:50px;color:whitesmoke">“Reshaping the status quo for a better future”</p>
+        <p class="w3-medium w3-center" style="padding-bottom:20px;color:whitesmoke">Provide us with sample speech to test our model out!</p>
+        <center><form method="POST" enctype="multipart/form-data">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <div class="form__group">
+              <input name="text" class="form__input" id="text" placeholder="ex: johnny appleseed"/>
+              <label for="name" class="form__label"></label>
+              <input type="submit" style="display: none" />
+        </div></form></center>
+    </div>
+
+</html>

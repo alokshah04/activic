@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        
+        .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #Fff;
+        top: 50%;
+        animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-inner 2s infinite ease-in;
+        }
+
+        @keyframes loader {
+        0% {
+            transform: rotate(0deg);
+        }
+        
+        25% {
+            transform: rotate(180deg);
+        }
+        
+        50% {
+            transform: rotate(180deg);
+        }
+        
+        75% {
+            transform: rotate(360deg);
+        }
+        
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        @keyframes loader-inner {
+        0% {
+            height: 0%;
+        }
+        
+        25% {
+            height: 0%;
+        }
+        
+        50% {
+            height: 100%;
+        }
+        
+        75% {
+            height: 100%;
+        }
+        
+        100% {
+            height: 0%;
+        }
+        }
+
+    body,h1 {font-family: "Raleway", sans-serif}
+    body {
+        background-color: #11CDC5;
+    }
+        
+    </style>
+    <div class="w3-display-middle">
+        <center><div class="w3-jumbo w3-animate-top" style="
+            color: whitesmoke; 
+            clear: both;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;">Detecting Offensive</div></center>
+        <center><div class="w3-jumbo w3-animate-top" style="color:whitesmoke">Speech</div></center>
+        <hr class="w3-border-grey" style="padding-top:50px;margin:auto;width:40%">
+        <p class="w3-xlarge w3-center" style="padding-bottom:50px;color:whitesmoke">“Reshaping the status quo for a better future”</p>
+        <center>
+            <p style="color:whitesmoke" class="w3-xlarge w3-center">Classification: {{ s }}</p>
+        </center>
+    </div>
+
+
+</html>
